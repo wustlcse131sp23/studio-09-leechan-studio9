@@ -17,7 +17,8 @@ public class NameToHeight {
 	 * and output the results. Be sure to handle the case where the map does not
 	 * contain a specified name.
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		Scanner in = new Scanner(System.in);
 
 		Map<String, Integer> height = new HashMap<>();
@@ -29,14 +30,16 @@ public class NameToHeight {
 		System.out.println("Input name");
 		String input = in.next();
 		
-		while (!input.equals("quit")) {
-			
-			if (input.equals("Sophie")|| input.equals("Angelina")|| input.equals("Tiffany")) {
+		while (!input.equals("quit")) 
+		{
+			if (input.equals("Sophie") || input.equals("Angelina") || input.equals("Tiffany")) 
+			{
 				System.out.println(input + "'s height: " + height.get(input));
 				System.out.println("Input name");
 				input = in.next();
 			}
-			else {
+			else 
+			{
 				System.out.println("Choose Sophie, Angelina, Tiffany, or quit");
 				input = in.next();
 			}
